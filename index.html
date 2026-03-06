@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="imagenes/Gato cool con gafas y cigarro (1).png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -26,10 +28,10 @@
                 </p>
                 <!-- Navegación -->
                 <nav class="main-nav">
-                    <a href="#sobre-mi">Sobre Mí</a>
-                    <a href="#mis-juegos">Mis Juegos</a>
-                    <a href="#musica">Música</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#sobre-mi"><i class="fas fa-user"></i> Sobre Mí</a>
+                    <a href="#mis-juegos"><i class="fas fa-gamepad"></i> Mis Juegos</a>
+                    <a href="#musica"><i class="fas fa-headphones"></i> Música</a>
+                    <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
                 </nav>
             </div>
         </div>
@@ -75,10 +77,10 @@
                                             allowfullscreen>
                                     </iframe>
                                 </div>
-                                <p class="image-caption">Gameplay de Sphere Dominion.</p>
+                                <p class="image-caption">Gameplay de Sphere Dominion</p>
                             </div>
                             <div class="game-info">
-                                <h3 class="game-title">Sphere Dominion</h3>
+                                <h3 class="game-title">SPHERE DOMINION</h3>
                                 <div class="game-details">
                                     <p><strong>Género:</strong> Arcade, Supervivencia 3D</p>
                                     <p><strong>Engine:</strong> Unity</p>
@@ -98,17 +100,16 @@
                                         <li>Diseño de niveles y balance de dificultad.</li>
                                     </ul>
                                 </div>
-                                <a href="https://vortdiffx.itch.io/sphere-dominion" class="game-button" target="_blank">Ver proyecto en Itch.io</a>
+                                <a href="https://vortdiffx.itch.io/sphere-dominion" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io</a>
                             </div>
                         </div>
-                        <hr class="styled-hr">
                     </div>
-                </div> <!-- CIERRA SECCIÓN MIS JUEGOS -->
+                </div>
 
-                <!-- SECCIÓN MÚSICA (AHORA ESTÁ FUERA DE MIS JUEGOS) -->
+                <!-- SECCIÓN MÚSICA -->
                 <div class="section-wrap section-bg-dark" id="musica">
                     <div class="container">
-                        <h2 class="section-title">MUSICA</h2>
+                        <h2 class="section-title">MÚSICA</h2>
                         <hr class="styled-hr">
                         <p class="section-description" style="text-align: center; margin-bottom: 30px; color: #b0b0b0;">
                             Una parte fundamental de mis proyectos. Aquí puedes escuchar algunas de las composiciones y diseños de sonido que he creado.
@@ -117,12 +118,14 @@
                         <!-- Entrada Musical 1: Screen Theme -->
                         <div class="game-entry">
                             <div class="game-media">
-                                <!-- QUITÉ la / del src -->
-                                <img src="imagenes/icono_sonidos.png" alt="Icono de sonidos" class="game-image" style="background-color: #333;">
+                                <!-- Imagen local - Verifica que la ruta sea correcta -->
+                                <img src="imagenes/icono_sonidos.png" alt="Icono de música" class="game-image" style="background-color: #333;">
+                                <!-- Si no funciona la imagen local, usa esta de internet: -->
+                                <!-- <img src="https://cdn-icons-png.flaticon.com/512/2830/2830285.png" alt="Icono de música" class="game-image" style="background-color: #333;"> -->
                                 <p class="image-caption">Composición original</p>
                             </div>
                             <div class="game-info">
-                                <h3 class="game-title">Música y SFX - Screen Theme</h3>
+                                <h3 class="game-title">MÚSICA Y SFX - SCREEN THEME</h3>
                                 <div class="game-description">
                                     <p>
                                         Tema principal del menú compuesto para un prototipo de juego indie. Diseñado para crear una introducción ligera y atmosférica al mundo del proyecto. Construido como un bucle continuo para soportar la navegación prolongada en el menú.
@@ -131,8 +134,7 @@
                                 
                                 <!-- REPRODUCTOR DE AUDIO -->
                                 <div class="audio-player">
-                                    <p><strong>Tema principal - "Chill":</strong></p>
-                                    <!-- IMPORTANTE: Quita el (1) del nombre del archivo -->
+                                    <p><strong><i class="fas fa-music"></i> TEMA PRINCIPAL - "CHILL":</strong></p>
                                     <audio controls preload="none">
                                         <source src="sonidos/chill.mp3" type="audio/mpeg">
                                         Tu navegador no soporta el elemento de audio.
@@ -140,18 +142,17 @@
                                 </div>
 
                                 <div class="game-roles" style="margin-top: 20px;">
-                                    <p><strong>Roles musicales:</strong></p>
+                                    <p><strong>ROLES MUSICALES:</strong></p>
                                     <ul>
-                                        <li>Composición musical (temas de gameplay, menús).</li>
-                                        <li>Diseño e implementación de efectos de sonido (SFX).</li>
-                                        <li>Mezcla y ambientación sonora en Unity.</li>
+                                        <li><i class="fas fa-compact-disc"></i> Composición musical (temas de gameplay, menús).</li>
+                                        <li><i class="fas fa-waveform"></i> Diseño e implementación de efectos de sonido (SFX).</li>
+                                        <li><i class="fas fa-sliders"></i> Mezcla y ambientación sonora en Unity.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <hr class="styled-hr">
                     </div>
-                </div> <!-- CIERRA SECCIÓN MÚSICA -->
+                </div>
 
                 <!-- SECCIÓN CONTACTO -->
                 <div class="section-wrap section-bg-medium" id="contacto">
@@ -161,16 +162,16 @@
                         <div class="contact-info">
                             <p>Puedes contactarme a través de los siguientes medios:</p>
                             <div class="social-links">
-                                <a href="mailto:johanreinan@gmail.com" class="social-link" target="_blank">📧 Email</a>
-                                <a href="https://www.linkedin.com/in/alex-reina-278035358/" class="social-link" target="_blank">💼 LinkedIn</a>
-                                <a href="https://vortdiffx.itch.io" class="social-link" target="_blank">🎮 Itch.io</a>
+                                <a href="mailto:johanreinan@gmail.com" class="social-link" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                                <a href="https://www.linkedin.com/in/alex-reina-278035358/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                <a href="https://vortdiffx.itch.io" class="social-link" target="_blank"><i class="fab fa-itch-io"></i> Itch.io</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div> <!-- CIERRA contenido-principal -->
-        </div> <!-- CIERRA main-wrap -->
+            </div>
+        </div>
 
         <!-- FOOTER -->
         <footer class="footer-wrap">
@@ -178,7 +179,7 @@
                 <p>© 2026 - Johan Alexander Reina Niño - Portafolio. Diseño inspirado en Nathalie Jankie.</p>
             </div>
         </footer>
-    </div> <!-- CIERRA wrapper -->
+    </div>
 
 </body>
 </html>
