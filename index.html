@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="imagenes/Gato cool con gafas y cigarro (1).png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome local (cambia a la CDN si quieres, pero lo mejor es tenerlo local) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <div class="wrapper">
     
-    <!-- BANNER PRINCIPAL -->
     <div class="banner-wrap" style="background-image: url(imagenes/banner.png); background-size: cover; background-position: center;">
         <div class="container header-container">
             <h1 class="main-title">Johan Alexander Reina Niño</h1>
@@ -37,7 +37,6 @@
     <div class="main-wrap">
         <div id="contenido-principal">
 
-            <!-- SOBRE MÍ -->
             <div class="section-wrap section-bg-dark" id="sobre-mi">
                 <div class="container">
                     <h2 class="section-title">SOBRE MÍ</h2>
@@ -50,17 +49,15 @@
                 </div>
             </div>
 
-            <!-- PROYECTOS DESTACADOS -->
             <div class="section-wrap section-bg-medium" id="mis-juegos">
                 <div class="container">
                     <h2 class="section-title">PROYECTOS DESTACADOS</h2>
                     <hr class="styled-hr">
-                    
                     <div class="carousel-container">
                         <button class="carousel-btn prev-btn" id="prevGameBtn"><i class="fas fa-chevron-left"></i></button>
                         <div class="carousel-wrapper">
                             <div class="carousel-slide" id="gameCarousel">
-                                <!-- Proyecto 1: Sphere Dominion -->
+                                <!-- Sphere Dominion -->
                                 <div class="game-entry carousel-item">
                                     <div class="game-media">
                                         <div class="video-container">
@@ -82,61 +79,36 @@
                                             <ul>
                                                 <li><i class="fas fa-gamepad"></i> Diseño de mecánicas y progresión</li>
                                                 <li><i class="fas fa-chart-line"></i> Optimización de draw calls y LODs</li>
-                                                <li><i class="fas fa-palette"></i> Shaders personalizados (esfera, hits, energía)</li>
-                                                <li><i class="fas fa-code"></i> Herramienta de editor para balance de oleadas</li>
-                                                <li><i class="fas fa-music"></i> Composición musical y diseño de SFX</li>
+                                                <li><i class="fas fa-palette"></i> Shaders personalizados</li>
+                                                <li><i class="fas fa-code"></i> Herramienta de editor para balance</li>
+                                                <li><i class="fas fa-music"></i> Composición musical y SFX</li>
                                             </ul>
                                         </div>
                                         <a href="https://vortdiffx.itch.io/sphere-dominion" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io</a>
                                     </div>
                                 </div>
-                                <!-- Proyecto 2 (placeholder) -->
+                                <!-- Segundo proyecto (placeholder sin imágenes externas) -->
                                 <div class="game-entry carousel-item">
                                     <div class="game-media">
-                                        <img src="https://via.placeholder.com/560x315/1E1E1E/8B1E3F?text=Herramienta+de+Editor" alt="Herramienta de editor" class="game-image">
-                                        <p class="image-caption">Próximo proyecto técnico</p>
+                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
+                                            <i class="fas fa-tools" style="font-size:4rem; color:#8B1E3F;"></i>
+                                        </div>
+                                        <p class="image-caption">Herramienta de editor (próximamente)</p>
                                     </div>
                                     <div class="game-info">
-                                        <h3 class="game-title">HERRAMIENTA DE EDITOR (PRÓXIMAMENTE)</h3>
+                                        <h3 class="game-title">HERRAMIENTA DE EDITOR</h3>
                                         <div class="game-details">
                                             <p><strong>Rol:</strong> Technical Artist</p>
                                             <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> Editor</p>
                                         </div>
                                         <div class="game-description">
-                                            <p>Desarrollo de una ventana de editor para automatizar la creación de prefabs de audio y optimizar la integración de sonidos en escenas complejas.</p>
+                                            <p>Ventana de editor para automatizar la creación de prefabs de audio y optimizar la integración de sonidos.</p>
                                         </div>
                                         <div class="game-roles">
                                             <p><strong>CARACTERÍSTICAS:</strong></p>
                                             <ul>
-                                                <li><i class="fas fa-tools"></i> Automatización de tareas repetitivas</li>
+                                                <li><i class="fas fa-tools"></i> Automatización de tareas</li>
                                                 <li><i class="fas fa-database"></i> Asignación masiva de AudioSources</li>
-                                                <li><i class="fas fa-chart-simple"></i> Visualización de métricas de audio</li>
-                                            </ul>
-                                        </div>
-                                        <a href="#" class="game-button">Próximamente</a>
-                                    </div>
-                                </div>
-                                <!-- Proyecto 3 (placeholder) -->
-                                <div class="game-entry carousel-item">
-                                    <div class="game-media">
-                                        <img src="https://via.placeholder.com/560x315/1E1E1E/8B1E3F?text=Shader+Demo" class="game-image">
-                                        <p class="image-caption">Demo de shaders</p>
-                                    </div>
-                                    <div class="game-info">
-                                        <h3 class="game-title">DEMO DE SHADERS (CONCEPTO)</h3>
-                                        <div class="game-details">
-                                            <p><strong>Rol:</strong> Technical Artist</p>
-                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> PC</p>
-                                        </div>
-                                        <div class="game-description">
-                                            <p>Recopilación de shaders personalizados para efectos de agua, nieve, disolución y glow. Optimizados para bajo costo de GPU.</p>
-                                        </div>
-                                        <div class="game-roles">
-                                            <p><strong>TECNOLOGÍAS:</strong></p>
-                                            <ul>
-                                                <li><i class="fas fa-water"></i> Shader Graph y HLSL</li>
-                                                <li><i class="fas fa-chart-line"></i> Benchmarking de rendimiento</li>
-                                                <li><i class="fas fa-github-alt"></i> Repositorio con ejemplos</li>
                                             </ul>
                                         </div>
                                         <a href="#" class="game-button">Próximamente</a>
@@ -150,113 +122,54 @@
                 </div>
             </div>
 
-            <!-- SECCIÓN SOUND DESIGN & COMPOSICIÓN (con 4 canciones) -->
+            <!-- Sección de música (solo las 4 pistas, sin imágenes externas) -->
             <div class="section-wrap section-bg-dark" id="musica">
                 <div class="container">
                     <h2 class="section-title">SOUND DESIGN & COMPOSICIÓN</h2>
                     <hr class="styled-hr">
                     <p class="section-description" style="text-align: center; margin-bottom: 30px; color: #b0b0b0;">
-                        Como parte de mi perfil técnico, creo música y efectos de sonido que refuerzan la experiencia de juego. 
                         Escucha mis trabajos en <a href="https://soundcloud.com/vorzh" target="_blank" style="color: #8B1E3F;"><i class="fab fa-soundcloud"></i> SoundCloud</a>.
                     </p>
-
                     <div class="carousel-container">
                         <button class="carousel-btn prev-btn" id="prevMusicBtn"><i class="fas fa-chevron-left"></i></button>
                         <div class="carousel-wrapper">
                             <div class="carousel-slide" id="musicCarousel">
-                                
-                                <!-- Pista 1: Oe Berriondo Music -->
+                                <!-- Pista 1 -->
                                 <div class="game-entry carousel-item" style="justify-content: center;">
-                                    <div class="game-info" style="flex: 1; max-width: 100%;">
+                                    <div class="game-info" style="flex:1; max-width:100%;">
                                         <h3 class="game-title">OE BERRIONDO MUSIC</h3>
-                                        <div class="game-description">
-                                            <p>Tema experimental que mezcla electrónica y ritmos urbanos. Compuesto, producido y mezclado íntegramente por mí. Ideal para ambientes urbanos o secuencias de ritmo rápido.</p>
-                                        </div>
-                                        <div class="soundcloud-embed">
-                                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                                                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/oe-berriondo-music&color=%238B1E3F&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false">
-                                            </iframe>
-                                        </div>
-                                        <div class="game-roles">
-                                            <p><strong>MI TRABAJO:</strong></p>
-                                            <ul>
-                                                <li><i class="fas fa-compact-disc"></i> Composición, grabación y mezcla</li>
-                                                <li><i class="fas fa-waveform"></i> Síntesis y diseño de efectos</li>
-                                                <li><i class="fas fa-cloud-moon"></i> Creación de atmósfera</li>
-                                            </ul>
-                                        </div>
+                                        <div class="game-description"><p>Tema experimental urbano.</p></div>
+                                        <div class="soundcloud-embed"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/oe-berriondo-music&color=%238B1E3F&auto_play=false"></iframe></div>
+                                        <div class="game-roles"><p><strong>MI TRABAJO:</strong></p><ul><li><i class="fas fa-compact-disc"></i> Composición y mezcla</li><li><i class="fas fa-waveform"></i> Diseño de efectos</li></ul></div>
                                     </div>
                                 </div>
-
-                                <!-- Pista 2: Sumo -->
+                                <!-- Pista 2 -->
                                 <div class="game-entry carousel-item" style="justify-content: center;">
-                                    <div class="game-info" style="flex: 1; max-width: 100%;">
+                                    <div class="game-info" style="flex:1; max-width:100%;">
                                         <h3 class="game-title">SUMO</h3>
-                                        <div class="game-description">
-                                            <p>Tema pesado y contundente, con influencias de trap y bass. Pensado para momentos de tensión o peleas contra jefes. Ritmo lento pero agresivo, con bajos profundos.</p>
-                                        </div>
-                                        <div class="soundcloud-embed">
-                                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                                                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/sumo&color=%238B1E3F&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false">
-                                            </iframe>
-                                        </div>
-                                        <div class="game-roles">
-                                            <p><strong>MI TRABAJO:</strong></p>
-                                            <ul>
-                                                <li><i class="fas fa-compact-disc"></i> Composición y producción</li>
-                                                <li><i class="fas fa-bass"></i> Diseño de bajos y texturas</li>
-                                                <li><i class="fas fa-chart-simple"></i> Masterización orientada a impacto</li>
-                                            </ul>
-                                        </div>
+                                        <div class="game-description"><p>Tema pesado para peleas o tensión.</p></div>
+                                        <div class="soundcloud-embed"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/sumo&color=%238B1E3F&auto_play=false"></iframe></div>
+                                        <div class="game-roles"><p><strong>MI TRABAJO:</strong></p><ul><li><i class="fas fa-bass"></i> Diseño de bajos</li><li><i class="fas fa-chart-simple"></i> Masterización</li></ul></div>
                                     </div>
                                 </div>
-
-                                <!-- Pista 3: Pollo Boss -->
+                                <!-- Pista 3 -->
                                 <div class="game-entry carousel-item" style="justify-content: center;">
-                                    <div class="game-info" style="flex: 1; max-width: 100%;">
+                                    <div class="game-info" style="flex:1; max-width:100%;">
                                         <h3 class="game-title">POLLO BOSS</h3>
-                                        <div class="game-description">
-                                            <p>Tema épico y divertido, ideal para un jefe poco convencional. Mezcla orquestación cómica con momentos de tensión. Perfecto para batallas con personalidad.</p>
-                                        </div>
-                                        <div class="soundcloud-embed">
-                                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                                                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/pollo-boss&color=%238B1E3F&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false">
-                                            </iframe>
-                                        </div>
-                                        <div class="game-roles">
-                                            <p><strong>MI TRABAJO:</strong></p>
-                                            <ul>
-                                                <li><i class="fas fa-drum"></i> Composición rítmica y orquestal</li>
-                                                <li><i class="fas fa-laugh"></i> Creación de atmósfera cómico-épica</li>
-                                                <li><i class="fas fa-waveform"></i> Diseño de transiciones</li>
-                                            </ul>
-                                        </div>
+                                        <div class="game-description"><p>Tema épico y divertido para jefe.</p></div>
+                                        <div class="soundcloud-embed"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/pollo-boss&color=%238B1E3F&auto_play=false"></iframe></div>
+                                        <div class="game-roles"><p><strong>MI TRABAJO:</strong></p><ul><li><i class="fas fa-drum"></i> Composición orquestal</li><li><i class="fas fa-laugh"></i> Atmósfera cómico-épica</li></ul></div>
                                     </div>
                                 </div>
-
-                                <!-- Pista 4: Menu Globo -->
+                                <!-- Pista 4 -->
                                 <div class="game-entry carousel-item" style="justify-content: center;">
-                                    <div class="game-info" style="flex: 1; max-width: 100%;">
+                                    <div class="game-info" style="flex:1; max-width:100%;">
                                         <h3 class="game-title">MENÚ GLOBO</h3>
-                                        <div class="game-description">
-                                            <p>Tema relajante y melódico para menús principales o zonas seguras. Sonidos suaves y globos que flotan. Crea una sensación de calma y exploración.</p>
-                                        </div>
-                                        <div class="soundcloud-embed">
-                                            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                                                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/menu-globo&color=%238B1E3F&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false">
-                                            </iframe>
-                                        </div>
-                                        <div class="game-roles">
-                                            <p><strong>MI TRABAJO:</strong></p>
-                                            <ul>
-                                                <li><i class="fas fa-feather-alt"></i> Composición ambiental</li>
-                                                <li><i class="fas fa-cloud-moon"></i> Diseño de atmósfera relajante</li>
-                                                <li><i class="fas fa-sync-alt"></i> Loop perfecto para menús</li>
-                                            </ul>
-                                        </div>
+                                        <div class="game-description"><p>Tema relajante para menús.</p></div>
+                                        <div class="soundcloud-embed"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vorzh/menu-globo&color=%238B1E3F&auto_play=false"></iframe></div>
+                                        <div class="game-roles"><p><strong>MI TRABAJO:</strong></p><ul><li><i class="fas fa-feather-alt"></i> Composición ambiental</li><li><i class="fas fa-sync-alt"></i> Loop para menús</li></ul></div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <button class="carousel-btn next-btn" id="nextMusicBtn"><i class="fas fa-chevron-right"></i></button>
@@ -265,13 +178,12 @@
                 </div>
             </div>
 
-            <!-- CONTACTO -->
             <div class="section-wrap section-bg-medium" id="contacto">
                 <div class="container">
                     <h2 class="section-title">CONTACTO</h2>
                     <hr class="styled-hr">
                     <div class="contact-info">
-                        <p>¿Buscas un Technical Artist & Game Designer para tu proyecto?</p>
+                        <p>¿Buscas un Technical Artist & Game Designer?</p>
                         <div class="social-links">
                             <a href="mailto:johanreinan@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
                             <a href="https://www.linkedin.com/in/alex-reina-278035358/" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -294,7 +206,6 @@
 </div>
 
 <script>
-    // CARRUSEL PROYECTOS
     const gameCarousel = document.getElementById('gameCarousel');
     const prevGameBtn = document.getElementById('prevGameBtn');
     const nextGameBtn = document.getElementById('nextGameBtn');
