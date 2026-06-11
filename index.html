@@ -9,19 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="imagenes/Gato cool con gafas y cigarro (1).png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome local (cambia a la CDN si quieres, pero lo mejor es tenerlo local) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <div class="wrapper">
     
+    <!-- BANNER PRINCIPAL -->
     <div class="banner-wrap" style="background-image: url(imagenes/banner.png); background-size: cover; background-position: center;">
         <div class="container header-container">
             <h1 class="main-title">Johan Alexander Reina Niño</h1>
             <p class="main-subtitle">TECHNICAL ARTIST & GAME DESIGNER</p>
             <p class="main-description">
-                Technical Artist y Game Designer con experiencia en Unity, C#, optimización, shaders y diseño de audio. 
+                Technical Artist y Game Designer con experiencia en Unity, C#, optimización, shaders, diseño de niveles y audio. 
                 Creo experiencias completas: desde la mecánica y el balance hasta la optimización visual y la identidad sonora. 
                 Desarrollo herramientas para artistas, sistemas de juego eficientes y bandas sonoras que potencian la inmersión.
             </p>
@@ -37,83 +37,149 @@
     <div class="main-wrap">
         <div id="contenido-principal">
 
+            <!-- SOBRE MÍ -->
             <div class="section-wrap section-bg-dark" id="sobre-mi">
                 <div class="container">
                     <h2 class="section-title">SOBRE MÍ</h2>
                     <hr class="styled-hr">
                     <div class="content-text">
-                        <p>Soy <strong>Technical Artist y Game Designer</strong>. Combino la visión de diseño de juego con habilidades técnicas profundas: optimización de rendimiento, creación de shaders, desarrollo de herramientas de editor y diseño de audio. Mi objetivo es que cada proyecto no solo sea divertido, sino también técnicamente sólido y sonoramente inmersivo.</p>
-                        <p>Como Game Designer, diseño mecánicas, sistemas de progresión y balance. Como Technical Artist, implemento shaders personalizados, optimizo recursos, desarrollo herramientas que aceleran el flujo de trabajo y me aseguro de que el audio responda dinámicamente a la jugabilidad. El diseño de sonido es parte natural de mi perfil técnico.</p>
-                        <p>Actualmente profundizo en técnicas avanzadas de optimización para móviles, integración de middleware de audio (FMOD) y automatización de tareas repetitivas. Ayudo a equipos pequeños y medianos a alcanzar un nivel técnico profesional sin perder la esencia del diseño.</p>
+                        <p>Soy <strong>Technical Artist y Game Designer</strong>. Combino la visión de diseño de juego con habilidades técnicas profundas: optimización de rendimiento, creación de shaders, desarrollo de herramientas de editor, diseño de niveles y audio. Mi objetivo es que cada proyecto no solo sea divertido, sino también técnicamente sólido y sonoramente inmersivo.</p>
+                        <p>Como Game Designer, diseño mecánicas, sistemas de progresión y balance. Como Technical Artist, implemento shaders personalizados, optimizo recursos y desarrollo herramientas que aceleran el flujo de trabajo. Además, me encargo del diseño de niveles y la identidad sonora cuando el proyecto lo requiere.</p>
+                        <p>Actualmente profundizo en técnicas avanzadas de optimización para móviles, integración de middleware de audio (FMOD) y automatización de tareas repetitivas.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- PROYECTOS DESTACADOS (CARRUSEL) -->
             <div class="section-wrap section-bg-medium" id="mis-juegos">
                 <div class="container">
                     <h2 class="section-title">PROYECTOS DESTACADOS</h2>
                     <hr class="styled-hr">
+                    
                     <div class="carousel-container">
                         <button class="carousel-btn prev-btn" id="prevGameBtn"><i class="fas fa-chevron-left"></i></button>
                         <div class="carousel-wrapper">
                             <div class="carousel-slide" id="gameCarousel">
-                                <!-- Sphere Dominion -->
-                                <div class="game-entry carousel-item">
-                                    <div class="game-media">
-                                        <div class="video-container">
-                                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YAGFgu_m9io?si=bMRws4vKyLPAC0Ue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                        </div>
-                                        <p class="image-caption">Sphere Dominion - Gameplay</p>
-                                    </div>
-                                    <div class="game-info">
-                                        <h3 class="game-title">SPHERE DOMINION</h3>
-                                        <div class="game-details">
-                                            <p><strong>Rol:</strong> Technical Artist & Game Designer</p>
-                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> PC</p>
-                                        </div>
-                                        <div class="game-description">
-                                            <p>Diseñé el sistema de oleadas, el balance de dificultad y las habilidades especiales. Como Technical Artist, optimicé el rendimiento, creé shaders para la esfera y los efectos de impacto, e implementé toda la identidad sonora (música dinámica y SFX).</p>
-                                        </div>
-                                        <div class="game-roles">
-                                            <p><strong>APORTACIONES:</strong></p>
-                                            <ul>
-                                                <li><i class="fas fa-gamepad"></i> Diseño de mecánicas y progresión</li>
-                                                <li><i class="fas fa-chart-line"></i> Optimización de draw calls y LODs</li>
-                                                <li><i class="fas fa-palette"></i> Shaders personalizados</li>
-                                                <li><i class="fas fa-code"></i> Herramienta de editor para balance</li>
-                                                <li><i class="fas fa-music"></i> Composición musical y SFX</li>
-                                            </ul>
-                                        </div>
-                                        <a href="https://vortdiffx.itch.io/sphere-dominion" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io</a>
-                                    </div>
-                                </div>
-                                <!-- Segundo proyecto (placeholder sin imágenes externas) -->
+
+                                <!-- ========== 2. IT'S NOT A TOY (Technical Artist) ========== -->
                                 <div class="game-entry carousel-item">
                                     <div class="game-media">
                                         <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
-                                            <i class="fas fa-tools" style="font-size:4rem; color:#8B1E3F;"></i>
+                                            <i class="fas fa-brain" style="font-size:4rem; color:#8B1E3F;"></i>
                                         </div>
-                                        <p class="image-caption">Herramienta de editor (próximamente)</p>
+                                        <p class="image-caption">It's Not a Toy - Captura conceptual</p>
                                     </div>
                                     <div class="game-info">
-                                        <h3 class="game-title">HERRAMIENTA DE EDITOR</h3>
+                                        <h3 class="game-title">IT'S NOT A TOY</h3>
                                         <div class="game-details">
                                             <p><strong>Rol:</strong> Technical Artist</p>
-                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> Editor</p>
+                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> PC</p>
                                         </div>
                                         <div class="game-description">
-                                            <p>Ventana de editor para automatizar la creación de prefabs de audio y optimizar la integración de sonidos.</p>
+                                            <p>Juego de horror psicológico donde una niña llamada María abre un portal prohibido y fractura su realidad. El hogar se convierte en un laberinto cambiante entre el mundo de los miedos y el mundo de los deseos. La jugabilidad combina manipulación del entorno y acertijos interconectados bajo presión de tiempo.</p>
                                         </div>
                                         <div class="game-roles">
-                                            <p><strong>CARACTERÍSTICAS:</strong></p>
+                                            <p><strong>MI TRABAJO (Technical Artist):</strong></p>
                                             <ul>
-                                                <li><i class="fas fa-tools"></i> Automatización de tareas</li>
-                                                <li><i class="fas fa-database"></i> Asignación masiva de AudioSources</li>
+                                                <li><i class="fas fa-chart-line"></i> Optimización de assets y gestión de memoria</li>
+                                                <li><i class="fas fa-palette"></i> Creación de shaders para efectos de transición entre mundos</li>
+                                                <li><i class="fas fa-code"></i> Desarrollo de herramientas de editor para colocar acertijos</li>
+                                                <li><i class="fas fa-tachometer-alt"></i> Perfilado de rendimiento en escenas complejas</li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="game-button">Próximamente</a>
+                                        <a href="#" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io (próximamente)</a>
                                     </div>
                                 </div>
+
+                                <!-- ========== 3. OE BERRIONDO (Sound Designer & Level Designer) ========== -->
+                                <div class="game-entry carousel-item">
+                                    <div class="game-media">
+                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
+                                            <i class="fas fa-machete" style="font-size:4rem; color:#8B1E3F;"></i>
+                                        </div>
+                                        <p class="image-caption">Oe Berriondo - Captura conceptual</p>
+                                    </div>
+                                    <div class="game-info">
+                                        <h3 class="game-title">OE BERRIONDO</h3>
+                                        <div class="game-details">
+                                            <p><strong>Rol:</strong> Sound Designer & Level Designer</p>
+                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> PC</p>
+                                        </div>
+                                        <div class="game-description">
+                                            <p>Folk-horror de acción donde eres un arriero cuya finca ha sido invadida por criaturas del folklore colombiano (Patasola, diablos, duendes). Usa un sistema de combate visceral basado en machete mientras recolectas café para desbloquear habilidades místicas. El ciclo "Cosecha y Supervivencia" define la experiencia.</p>
+                                        </div>
+                                        <div class="game-roles">
+                                            <p><strong>MI TRABAJO:</strong></p>
+                                            <ul>
+                                                <li><i class="fas fa-headphones"></i> <strong>Sound Designer:</strong> composición de música ambiental y folklórica, diseño de SFX para combate y entorno.</li>
+                                                <li><i class="fas fa-map"></i> <strong>Level Designer:</strong> diseño de niveles de los cafetales, zonas de peligro y distribución de enemigos.</li>
+                                                <li><i class="fas fa-waveform"></i> Implementación de audio dinámico en Unity (eventos, mezcla en tiempo real).</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io (próximamente)</a>
+                                    </div>
+                                </div>
+
+                                <!-- ========== 4. RUMBO A LA CAMA (Level Designer) ========== -->
+                                <div class="game-entry carousel-item">
+                                    <div class="game-media">
+                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
+                                            <i class="fas fa-bed" style="font-size:4rem; color:#8B1E3F;"></i>
+                                        </div>
+                                        <p class="image-caption">Rumbo a la Cama - Captura conceptual</p>
+                                    </div>
+                                    <div class="game-info">
+                                        <h3 class="game-title">RUMBO A LA CAMA</h3>
+                                        <div class="game-details">
+                                            <p><strong>Rol:</strong> Level Designer</p>
+                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> PC</p>
+                                        </div>
+                                        <div class="game-description">
+                                            <p>Despiertas en un sueño donde tu cama ha quedado atrapada en la cima de un cuarto infinito lleno de muebles gigantes. Usas una linterna mágica con tres gemas para robar la gravedad de los objetos, elevarlos y crear nuevos caminos. Resuelve acertijos verticales y regresa a tu cama.</p>
+                                        </div>
+                                        <div class="game-roles">
+                                            <p><strong>MI TRABAJO (Level Designer):</strong></p>
+                                            <ul>
+                                                <li><i class="fas fa-drafting-compass"></i> Diseño de niveles verticales y puzzles de gravedad</li>
+                                                <li><i class="fas fa-cubes"></i> Layout de plataformas flotantes y objetos interactuables</li>
+                                                <li><i class="fas fa-chart-line"></i> Balance de dificultad y ritmo de aprendizaje</li>
+                                                <li><i class="fas fa-code"></i> Implementación de mecánicas de linterna junto al equipo de programación</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io (próximamente)</a>
+                                    </div>
+                                </div>
+
+                                <!-- ========== 5. ROMANCE PROTOCALE (Technical Artist) ========== -->
+                                <div class="game-entry carousel-item">
+                                    <div class="game-media">
+                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
+                                            <i class="fas fa-heart" style="font-size:4rem; color:#8B1E3F;"></i>
+                                        </div>
+                                        <p class="image-caption">Romance Protocole - Captura conceptual</p>
+                                    </div>
+                                    <div class="game-info">
+                                        <h3 class="game-title">ROMANCE PROTOCALE</h3>
+                                        <div class="game-details">
+                                            <p><strong>Rol:</strong> Technical Artist</p>
+                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> PC</p>
+                                        </div>
+                                        <div class="game-description">
+                                            <p>Eres la única humana en una escuela llena de monstruos. Armada con un artefacto que dispara cumplidos, flores y regalos, debes hacer huir a los monstruos para recolectar su esencia. Pero el Rector, una criatura imponente e inmune a tus encantos, te persigue sin descanso. Enfrenta el rechazo, reparte amor a la fuerza y sobrevive.</p>
+                                        </div>
+                                        <div class="game-roles">
+                                            <p><strong>MI TRABAJO (Technical Artist):</strong></p>
+                                            <ul>
+                                                <li><i class="fas fa-palette"></i> Shaders para efectos de "amor" (partículas, brillos, corazones)</li>
+                                                <li><i class="fas fa-chart-line"></i> Optimización de partículas y efectos visuales</li>
+                                                <li><i class="fas fa-tachometer-alt"></i> Perfilado y optimización de IA de enemigos</li>
+                                                <li><i class="fas fa-code"></i> Herramientas de editor para spawn de enemigos</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io (próximamente)</a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <button class="carousel-btn next-btn" id="nextGameBtn"><i class="fas fa-chevron-right"></i></button>
@@ -122,7 +188,7 @@
                 </div>
             </div>
 
-            <!-- Sección de música (solo las 4 pistas, sin imágenes externas) -->
+            <!-- SECCIÓN SOUND DESIGN & COMPOSICIÓN (con las 4 canciones) -->
             <div class="section-wrap section-bg-dark" id="musica">
                 <div class="container">
                     <h2 class="section-title">SOUND DESIGN & COMPOSICIÓN</h2>
@@ -178,12 +244,13 @@
                 </div>
             </div>
 
+            <!-- CONTACTO -->
             <div class="section-wrap section-bg-medium" id="contacto">
                 <div class="container">
                     <h2 class="section-title">CONTACTO</h2>
                     <hr class="styled-hr">
                     <div class="contact-info">
-                        <p>¿Buscas un Technical Artist & Game Designer?</p>
+                        <p>¿Buscas un Technical Artist & Game Designer para tu proyecto?</p>
                         <div class="social-links">
                             <a href="mailto:johanreinan@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
                             <a href="https://www.linkedin.com/in/alex-reina-278035358/" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -206,6 +273,7 @@
 </div>
 
 <script>
+    // CARRUSEL PROYECTOS
     const gameCarousel = document.getElementById('gameCarousel');
     const prevGameBtn = document.getElementById('prevGameBtn');
     const nextGameBtn = document.getElementById('nextGameBtn');
