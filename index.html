@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="colores.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="imagenes/Gato cool con gafas y cigarro (1).png">
+    <link rel="icon" type="image/x-icon" href="imagenes/Gato cool con gafas y cigarro (1) (1).png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -60,13 +60,42 @@
                         <button class="carousel-btn prev-btn" id="prevGameBtn"><i class="fas fa-chevron-left"></i></button>
                         <div class="carousel-wrapper">
                             <div class="carousel-slide" id="gameCarousel">
-
-                                <!-- ========== 2. IT'S NOT A TOY (Technical Artist) ========== -->
+                                
+                                <!-- ========== 1. SPHERE DOMINION (con video) ========== -->
                                 <div class="game-entry carousel-item">
                                     <div class="game-media">
-                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
-                                            <i class="fas fa-brain" style="font-size:4rem; color:#8B1E3F;"></i>
+                                        <div class="video-container">
+                                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YAGFgu_m9io?si=bMRws4vKyLPAC0Ue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                         </div>
+                                        <p class="image-caption">Sphere Dominion - Gameplay</p>
+                                    </div>
+                                    <div class="game-info">
+                                        <h3 class="game-title">SPHERE DOMINION</h3>
+                                        <div class="game-details">
+                                            <p><strong>Rol:</strong> Technical Artist & Game Designer</p>
+                                            <p><strong>Engine:</strong> Unity | <strong>Plataforma:</strong> PC</p>
+                                        </div>
+                                        <div class="game-description">
+                                            <p>Diseñé el sistema de oleadas, el balance de dificultad y las habilidades especiales. Como Technical Artist, optimicé el rendimiento, creé shaders para la esfera y los efectos de impacto, e implementé toda la identidad sonora (música dinámica y SFX).</p>
+                                        </div>
+                                        <div class="game-roles">
+                                            <p><strong>MI TRABAJO:</strong></p>
+                                            <ul>
+                                                <li><i class="fas fa-gamepad"></i> Diseño de mecánicas y progresión</li>
+                                                <li><i class="fas fa-chart-line"></i> Optimización de draw calls y LODs</li>
+                                                <li><i class="fas fa-palette"></i> Shaders personalizados</li>
+                                                <li><i class="fas fa-code"></i> Herramienta de editor para balance</li>
+                                                <li><i class="fas fa-music"></i> Composición musical y SFX</li>
+                                            </ul>
+                                        </div>
+                                        <a href="https://vortdiffx.itch.io/sphere-dominion" class="game-button" target="_blank"><i class="fab fa-itch-io"></i> Ver en Itch.io</a>
+                                    </div>
+                                </div>
+
+                                <!-- ========== 2. IT'S NOT A TOY (con imagen its.png) ========== -->
+                                <div class="game-entry carousel-item">
+                                    <div class="game-media">
+                                        <img src="imagenes/its.png" alt="It's Not a Toy" class="game-image">
                                         <p class="image-caption">It's Not a Toy - Captura conceptual</p>
                                     </div>
                                     <div class="game-info">
@@ -91,12 +120,10 @@
                                     </div>
                                 </div>
 
-                                <!-- ========== 3. OE BERRIONDO (Sound Designer & Level Designer) ========== -->
+                                <!-- ========== 3. OE BERRIONDO (con imagen Oe.png) ========== -->
                                 <div class="game-entry carousel-item">
                                     <div class="game-media">
-                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
-                                            <i class="fas fa-machete" style="font-size:4rem; color:#8B1E3F;"></i>
-                                        </div>
+                                        <img src="imagenes/Oe.png" alt="Oe Berriondo" class="game-image">
                                         <p class="image-caption">Oe Berriondo - Captura conceptual</p>
                                     </div>
                                     <div class="game-info">
@@ -120,12 +147,10 @@
                                     </div>
                                 </div>
 
-                                <!-- ========== 4. RUMBO A LA CAMA (Level Designer) ========== -->
+                                <!-- ========== 4. RUMBO A LA CAMA (con imagen rumbo.png) ========== -->
                                 <div class="game-entry carousel-item">
                                     <div class="game-media">
-                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
-                                            <i class="fas fa-bed" style="font-size:4rem; color:#8B1E3F;"></i>
-                                        </div>
+                                        <img src="imagenes/rumbo.png" alt="Rumbo a la Cama" class="game-image">
                                         <p class="image-caption">Rumbo a la Cama - Captura conceptual</p>
                                     </div>
                                     <div class="game-info">
@@ -150,12 +175,10 @@
                                     </div>
                                 </div>
 
-                                <!-- ========== 5. ROMANCE PROTOCALE (Technical Artist) ========== -->
+                                <!-- ========== 5. ROMANCE PROTOCALE (con imagen romance.png) ========== -->
                                 <div class="game-entry carousel-item">
                                     <div class="game-media">
-                                        <div style="width:100%; height:315px; background-color:#1E1E1E; display:flex; align-items:center; justify-content:center; border:3px solid #8B1E3F; box-shadow:8px 8px 0 #4A4A4A;">
-                                            <i class="fas fa-heart" style="font-size:4rem; color:#8B1E3F;"></i>
-                                        </div>
+                                        <img src="imagenes/romance.png" alt="Romance Protocole" class="game-image">
                                         <p class="image-caption">Romance Protocole - Captura conceptual</p>
                                     </div>
                                     <div class="game-info">
